@@ -1,12 +1,12 @@
 <template lang="pug">
-.curso-main-container.pb-3
-  BannerInterno(icono="far fa-question-circle" titulo="Actividad didáctica")
-  .container.tarjeta.tarjeta--blanca.p-4.p-md-5
-
-    #Actividad                
-      <Actividad :cuestionario="cuestionario" />
-
-</template>
+  .curso-main-container.pb-3
+    BannerInterno(icono="far fa-question-circle" titulo="Actividad didáctica")
+    .container.tarjeta.tarjeta--blanca.p-4.p-md-5
+  
+      #Actividad                
+        <Actividad :cuestionario="cuestionario" />
+  
+  </template>
 
 <script>
 import Actividad from '@/components/actividad/Actividad'
@@ -15,79 +15,310 @@ export default {
   components: { Actividad },
   data: () => ({
     cuestionario: {
-      tema: 'Manejo de los residuos sólidos en la producción avícola.',
-      titulo: 'Ronda de preguntas',
-      introduccion: 'Descubre tu conocimiento sobre [tema de la unidad ]',
+      tema: 'Metodología del árbol de objetivos.',
+      titulo: 'Cuestionario',
+      introduccion:
+        'Lea cada enunciado y luego seleccione la respuesta correcta según corresponda.',
       barajarPreguntas: false,
       preguntas: [
         {
           id: 1,
-          texto:
-            'Se lanzan dos proyectiles desde el suelo con la misma velocidad inicial, pero uno se lanza horizontalmente y el otro se lanza formando un ángulo de 45 grados con la horizontal. Considerando la resistencia del aire despreciable, ¿cuáles de las siguientes afirmaciones son verdaderas?',
-          imagen: require('@/assets/curso/temas/a1.svg'),
+          texto: '¿Cuál es el propósito del árbol de objetivos?',
+          imagen: require('@/assets/componentes/cuestionario/Grupo 1101873.png'),
           barajarRespuestas: false,
           opciones: [
             {
               id: 'a',
-              texto: 'Ambos proyectiles alcanzarán la misma altura máxima.',
+              texto: 'Identificar problemas.',
               esCorrecta: false,
             },
             {
               id: 'b',
-              texto:
-                'El proyectil lanzado horizontalmente recorrerá una distancia horizontal mayor que el proyectil lanzado a 45 grados.',
-              esCorrecta: false,
+              texto: 'Transformar condiciones negativas en positivas.',
+              esCorrecta: true,
             },
             {
               id: 'c',
-              texto: 'Explotación extensiva o traspatio',
+              texto: 'Evaluar recursos disponibles.',
               esCorrecta: false,
             },
-            { id: 'd', texto: 'Todas la anteriores', esCorrecta: true },
+            {
+              id: 'd',
+              texto: 'Determinar el impacto del proyecto.',
+              esCorrecta: false,
+            },
           ],
-          mensaje_correcto: '¡Respuesta correcta! Felicidades.',
-          mensaje_incorrecto: 'Respuesta incorrecta. Intenta nuevamente ....',
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
         },
         {
           id: 2,
-          texto:
-            'Se lanzan dos proyectiles desde el suelo con la misma velocidad inicial, pero uno se lanza horizontalmente y el otro se lanza formando un ángulo de 45 grados con la horizontal. Considerando la resistencia del aire despreciable, ¿cuáles de las siguientes afirmaciones son verdaderas?',
-          imagen: require('@/assets/curso/temas/a2.svg'),
+          texto: '¿Qué representa el tronco en el árbol de objetivos?',
+          imagen: require('@/assets/componentes/cuestionario/Grupo 1102168.png'),
           barajarRespuestas: true,
           opciones: [
             {
               id: 'a',
-              texto: 'Ambos proyectiles alcanzarán la misma altura máxima.',
+              texto: 'Los medios del proyecto.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Los fines del proyecto.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'El problema central transformado en objetivo general.',
+              esCorrecta: true,
+            },
+            {
+              id: 'd',
+              texto: 'Los recursos necesarios.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
+        },
+        {
+          id: 3,
+          texto:
+            '¿Cuál es el primer paso en el procedimiento del árbol de objetivos?',
+          imagen: require('@/assets/componentes/cuestionario/Grupo 1102522.png'),
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Validar con grupos de trabajo.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Redactar objetivos positivos.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Verificar relaciones medios-fines.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Modificar objetivos.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
+        },
+        {
+          id: 4,
+          texto: '¿Qué se debe asegurar al redactar el objetivo general?',
+          imagen: require('@/assets/componentes/cuestionario/Grupo 1102524.png'),
+          barajarRespuestas: true,
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Que sea complicado y desafiante.',
+              esCorrecta: false,
+            },
+            { id: 'b', texto: 'Que sea claro y alcanzable.', esCorrecta: true },
+            {
+              id: 'c',
+              texto: 'Que involucre muchos recursos.',
+              esCorrecta: false,
+            },
+            { id: 'd', texto: 'Que sea breve y ambiguo.', esCorrecta: false },
+          ],
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
+        },
+        {
+          id: 5,
+          texto: '¿Qué se analiza en el paso de "Análisis de alternativas"?',
+          imagen: require('@/assets/componentes/cuestionario/Grupo 1101873.png'),
+          opciones: [
+            {
+              id: 'a',
+              texto: 'La disponibilidad de financiamiento.',
               esCorrecta: false,
             },
             {
               id: 'b',
               texto:
-                'El proyectil lanzado horizontalmente recorrerá una distancia horizontal mayor que el proyectil lanzado a 45 grados',
+                'Combinaciones de medios-fines que pueden ser estrategias del proyecto.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'La cantidad de personal necesario.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'El diseño gráfico del proyecto.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
+        },
+        {
+          id: 6,
+          texto:
+            '¿Cuál es uno de los criterios para la selección de alternativas?',
+          imagen: require('@/assets/componentes/cuestionario/Grupo 1102168.png'),
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Factibilidad técnica y económica.',
+              esCorrecta: true,
+            },
+            {
+              id: 'b',
+              texto: 'Cantidad de materiales disponibles.',
               esCorrecta: false,
             },
             {
               id: 'c',
-              texto:
-                'La velocidad horizontal del proyectil lanzado a 45 grados será mayor que la velocidad horizontal del proyectil lanzado horizontalmente.',
-              esCorrecta: true,
+              texto: 'Duración del proyecto.',
+              esCorrecta: false,
             },
             {
               id: 'd',
-              texto:
-                'La velocidad total del proyectil lanzado a 45 grados en el punto más alto de su trayectoria será la misma que la velocidad horizontal del proyectil lanzado horizontalmente en cualquier punto de su trayectoria.',
+              texto: 'Opinión pública.',
               esCorrecta: false,
             },
           ],
-          mensaje_correcto:
-            '¡Perfecto! Has seleccionado la respuesta correcta.',
-          mensaje_incorrecto: 'Esa no es la respuesta correcta. ¡Ánimo!',
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
+        },
+        {
+          id: 7,
+          texto: '¿Qué se evalúa en la matriz de evaluación de alternativas?',
+          imagen: require('@/assets/componentes/cuestionario/Grupo 1102522.png'),
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Factores políticos y sociales únicamente.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto:
+                'Pertinencia, coherencia, viabilidad, sostenibilidad e impacto.',
+              esCorrecta: true,
+            },
+            {
+              id: 'c',
+              texto: 'Costos y beneficios únicamente.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Opiniones de los #[em stakeholders.]',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
+        },
+        {
+          id: 8,
+          texto: '¿Qué representa el tronco en el árbol de objetivos?',
+          imagen: require('@/assets/componentes/cuestionario/Grupo 1102524.png'),
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Los fines del proyecto.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Los recursos necesarios.',
+              esCorrecta: false,
+            },
+            { id: 'c', texto: 'El objetivo general.', esCorrecta: true },
+            {
+              id: 'd',
+              texto: 'Las causas del problema.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
+        },
+        {
+          id: 9,
+          texto:
+            '¿Qué se transforma en el árbol de objetivos para convertir causas en medios?',
+          imagen: require('@/assets/componentes/cuestionario/Grupo 1101873.png'),
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Los fines.',
+              esCorrecta: false,
+            },
+            {
+              id: 'b',
+              texto: 'Los problemas secundarios.',
+              esCorrecta: false,
+            },
+            {
+              id: 'c',
+              texto: 'Las ramas.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Las raíces.',
+              esCorrecta: true,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
+        },
+        {
+          id: 10,
+          texto:
+            '¿Cuál es la relación que se debe verificar en el procedimiento del árbol de objetivos?',
+          imagen: require('@/assets/componentes/cuestionario/Grupo 1102168.png'),
+          opciones: [
+            {
+              id: 'a',
+              texto: 'Causa-efecto.',
+              esCorrecta: false,
+            },
+            { id: 'b', texto: 'Medios-fines.', esCorrecta: true },
+            {
+              id: 'c',
+              texto: 'Problema-solución.',
+              esCorrecta: false,
+            },
+            {
+              id: 'd',
+              texto: 'Recursos-resultados.',
+              esCorrecta: false,
+            },
+          ],
+          mensaje_correcto: '¡Muy bien! Felicitaciones, has acertado.',
+          mensaje_incorrecto:
+            'La respuesta es incorrecta. Te sugerimos revisar nuevamente el componente formativo.',
         },
       ],
       mensaje_final_aprobado:
-        'Se evidencia una buen manejo de los conceptos estudiados en esta unidad.',
+        '¡Excelente! Te felicito, has superado la actividad.',
       mensaje_final_reprobado:
-        'Se recomienda revisar el contenido de la unidad para clarificar conceptos.',
+        'Te recomendamos volver a revisar el componente formativo e intentar nuevamente la actividad didáctica',
     },
   }),
   computed: {},
