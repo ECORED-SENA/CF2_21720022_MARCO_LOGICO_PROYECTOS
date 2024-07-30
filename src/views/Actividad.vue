@@ -1,12 +1,12 @@
 <template lang="pug">
-  .curso-main-container.pb-3
+.curso-main-container.pb-3
     BannerInterno(icono="far fa-question-circle" titulo="Actividad didáctica")
     .container.tarjeta.tarjeta--blanca.p-4.p-md-5
   
       #Actividad                
         <Actividad :cuestionario="cuestionario" />
   
-  </template>
+</template>
 
 <script>
 import Actividad from '@/components/actividad/Actividad'
