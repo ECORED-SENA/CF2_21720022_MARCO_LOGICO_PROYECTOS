@@ -6,7 +6,7 @@
       .titulo-principal__numero
         span 1
       h1 Árbol de objetivos
-    p.mb-5(data-aos='fade-right') Luego de haber construido el árbol de problemas, es momento de plantear las situaciones o condiciones positivas que se desea obtener con la solución a los problemas identificados. Este paso se lleva a cabo realizando un árbol de objetivos, también llamado de soluciones. 
+    p.mb-5(data-aos='fade-right') Luego de haber construido el árbol de problemas, es momento de plantear las situaciones o condiciones positivas que se desean obtener con la solución a los problemas identificados. Este paso se lleva a cabo realizando un árbol de objetivos, también llamado de soluciones. 
     .row.justify-content-center.mb-5
       .col-lg-8
         .tarjeta.p-4.mb-4.color-primario
@@ -96,18 +96,24 @@
     .titulo-tres: h3 Ramas: efectos que se vuelven fines  
     p.mb-5(data-aos='fade-right') En este punto, las ramas que eran los efectos del problema central se convierten en las posibles formas en que el proyecto impactará al sector o su entorno más inmediato. Finalmente, se trata de la contribución que se hará a la comunidad con el desarrollo del proyecto. Las ramas principales serán los fines directos y las ramas secundarias, los fines indirectos.  
     .row.justify-content-center.mb-5
-      .col-lg-10
+      .col-12
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
           h5 Figura 4. 
-          span Ramas como fines    
-        img(src='@/assets/curso/temas/9.svg', alt='La figura presenta  las ramas como fines, destacando los fines directos e indirectos relacionados con la recuperación de la calidad de vida, los ecosistemas, los ingresos, la biodiversidad, la disponibilidad de recursos hídricos, y la fertilidad de los suelos, entre otros.')
+          span Ramas como fines
+        .row
+          .col-12
+            .p-4.bg-c1
+              img(src='@/assets/curso/temas/9.svg', alt='La figura presenta  las ramas como fines, destacando los fines directos e indirectos relacionados con la recuperación de la calidad de vida, los ecosistemas, los ingresos, la biodiversidad, la disponibilidad de recursos hídricos, y la fertilidad de los suelos, entre otros.')
     p.mb-5(data-aos='fade-right') Del árbol de problemas al árbol de objetivos finalizado: 
     .row.justify-content-center.mb-5
-      .col-lg-10
+      .col-12
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
           h5 Figura 5. 
-          span Ramas como fines    
-        img(src='@/assets/curso/temas/10.svg', alt='La figura presenta  el árbol de objetivos, donde el objetivo general es la disminución de las tasas de deterioro ambiental. Se detallan objetivos específicos en tres áreas: sistemas de producción sostenibles, acciones para la recuperación de los suelos y apropiada organización comunitaria.')
+          span Árbol de objetivos
+        .row
+          .col-12
+            .p-4.bg-c1
+              img(src='@/assets/curso/temas/10.svg', alt='La figura presenta  el árbol de objetivos, donde el objetivo general es la disminución de las tasas de deterioro ambiental. Se detallan objetivos específicos en tres áreas: sistemas de producción sostenibles, acciones para la recuperación de los suelos y apropiada organización comunitaria.')
     p.mb-5(data-aos='fade-right') La transformación del árbol de problemas en árbol de objetivos también implica cambiar la lógica de causas a efectos por la lógica de medios afines. 
     .tarjeta.p-4(style="background-color: #20454b ").mb-5
       .row.justify-content-center.align-items-center
