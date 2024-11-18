@@ -45,7 +45,7 @@
             .col-lg-2.col-4.mb-lg-0.mb-3: img(src='@/assets/curso/temas/b.svg', style="width: 100px", alt='').m-auto
             .col-lg-10
               p.mb-0 Identifique los medios-fines a excluir, porque no son deseables o factibles y aparte las tarjetas del árbol.  
-    p.mb-5(data-aos='fade-right') Se han excluido estas tarjetas del proyecto porque el representante de Cropocaldas anunció que ya están trabajando un proyecto sobre recuperación de suelos. Adicionalmente, no se considera que el proyecto pueda tener un alcance en la disminución de la politiquería y el uso de los recursos públicos. 
+    p.mb-5(data-aos='fade-right') Se han excluido estas tarjetas del proyecto porque el representante de Corpocaldas anunció que ya están trabajando un proyecto sobre recuperación de suelos. Adicionalmente, no se considera que el proyecto pueda tener un alcance en la disminución de la politiquería y el uso de los recursos públicos. 
     .titulo-sexto.color-acento-contenido(data-aos='fade-right')
       h5 Figura 6.
       span Medios excluidos  
