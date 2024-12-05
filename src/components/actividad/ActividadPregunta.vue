@@ -1,8 +1,10 @@
 <template>
   <div>
-    <p class="mb-4 pb-4">
-      <b>{{ pregunta.texto }}</b>
-    </p>
+    <h3 class="mb-4 pb-4">
+      <strong
+        >{{ numeroPregunta }}. <span v-html="pregunta.texto"></span
+      ></strong>
+    </h3>
     <div class="row align-items-center">
       <div class="d-none d-md-block col-5">
         <img :src="pregunta.imagen" alt="" />
@@ -33,20 +35,18 @@
                 ]"
               />
             </div>
-            <div class="col">
-              {{ respuesta.texto }}
-            </div>
+            <div class="col" v-html="respuesta.texto"></div>
           </div>
         </div>
       </div>
     </div>
     <template v-if="respuestaSelected.id">
       <hr />
-      <div v-if="respuestaSelected.esCorrecta" class="pt-2">
+      <div v-if="respuestaSelected.esCorrecta" class="pt-1">
         <span class="text-success h3 ma-0">¡Correcto!</span>
         {{ pregunta.mensaje_correcto }}
       </div>
-      <div v-else class="pt-2">
+      <div v-else class="pt-1">
         <span class="text-danger h3 ma-0">¡Incorrecto!</span>
         {{ pregunta.mensaje_incorrecto }}
       </div>
@@ -60,6 +60,10 @@ export default {
   props: {
     pregunta: {
       type: Object,
+      required: true,
+    },
+    numeroPregunta: {
+      type: Number,
       required: true,
     },
   },
@@ -93,6 +97,11 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+img
+  width: auto
+  height: auto
+  display: block
+  margin: auto
 .tarjeta--pregunta
   background: #dce4eb
 .tarjeta-respuesta

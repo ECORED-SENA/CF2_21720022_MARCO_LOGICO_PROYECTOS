@@ -36,14 +36,14 @@
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
           h5 Figura 1. 
           span Árbol de problemas versus árbol de objetivos
-        img(src='@/assets/curso/temas/5.svg', alt=' La figura  presenta una comparación entre el árbol de problemas y el árbol de objetivos, donde se visualizan los efectos y fines, el problema central y el objetivo general, así como las causas y los medios (objetivos específicos). ')
+        img(src='@/assets/curso/temas/5.svg', alt=' La figura presenta una comparación entre el árbol de problemas y el árbol de objetivos, donde se visualizan los efectos y fines, el problema central y el objetivo general, así como las causas y los medios (objetivos específicos). ')
     .d-inline-block.p-2.rounded-pill.mb-4(style="background-color: #fcd4b2")
       h3.mb-0.me-4.ms-2 Procedimiento
     p.mb-5(data-aos='fade-right') A continuación, detallará cada paso necesario para reestructurar eficazmente el árbol de problemas y garantizar que cada elemento contribuya positivamente al desarrollo del proyecto. 
     figure.mb-4
       .video
         iframe(width="560" height="315" src="https://www.youtube.com/embed/a2SMlQUlAMQ?si=fzIVfvisTgAa2p7G" title="Procedimiento" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-      figcaption Video. 
+
     .d-inline-block.p-2.rounded-pill.mb-4(style="background-color: #fcd4b2")
       h3.mb-0.me-4.ms-2 Consejos y recomendaciones 
     p.mb-5(data-aos='fade-right') Mantenga el sentido original del problema. Por ejemplo:

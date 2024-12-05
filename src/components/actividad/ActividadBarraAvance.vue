@@ -7,15 +7,20 @@
         </div>
       </div>
       <div class="col col-md-auto text-center">
-        Pregunta {{ preguntaIndex + 1 }} de {{ preguntasCount }}
+        <span class="lh-1">
+          Pregunta {{ preguntaIndex + 1 }} de {{ preguntasCount }}
+        </span>
       </div>
       <div class="col-auto">
+        <div v-if="respuestasLength === preguntasCount" class="py-4"></div>
         <button
-          v-if="respuestasLength === preguntasCount"
-          class="boton btn-lg boton--b py-3 px-5"
-          @click="$emit('reiniciar')"
+          v-else-if="respuestasLength === 9"
+          class="boton btn-lg boton--b py-3 px-4"
+          :class="{ 'boton--disabled': continuarDisabled }"
+          @click="$emit('continuar')"
         >
-          <span>Reiniciar</span>
+          <span>Verificar</span>
+          <i class="fas fa-arrow-right"></i>
         </button>
         <button
           v-else
@@ -51,10 +56,31 @@ export default {
       type: Number,
       default: 0,
     },
+    respuestas: {
+      type: Array,
+      required: true,
+    },
   },
   computed: {
     avanceWidth() {
       return `${((this.preguntaIndex + 1) / this.preguntasCount) * 100}%`
+    },
+    rtas() {
+      const respuestas = {
+        correctas: 0,
+        incorrectas: 0,
+        total: this.respuestas.length,
+        porcentaje: 0,
+      }
+      this.respuestas.forEach(r => {
+        if (r.esCorrecta) {
+          respuestas.correctas++
+        } else {
+          respuestas.incorrectas++
+        }
+      })
+      respuestas.porcentaje = (respuestas.correctas / respuestas.total) * 100
+      return respuestas
     },
   },
 }
@@ -66,6 +92,9 @@ export default {
   border-bottom-right-radius: 10px
   border-bottom-left-radius: 10px
   overflow: hidden
+  @media (max-width: 560px)
+    padding-left: .85rem !important
+
   .boton
     border-radius: 0
 
